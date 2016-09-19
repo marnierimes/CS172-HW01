@@ -5,6 +5,9 @@
 //
 
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+
 
 using namespace std;
 
@@ -13,14 +16,16 @@ int main()
 {
 	//part a
 	//initialized variable to true
-	int hasPassedTest = true;
+	bool hasPassedTest = true;
 
 	//part b
-	//make random numbers!
-	int x = 5;
+	//randomizes variables x and y
+	srand(time(0));
+	int x = rand() % 100;
 
-	int y = 7;
+	int y = rand() % 100;
 
+	//outputs which random number is greater than the other
 	if (x > y) {
 
 		cout << x << " is greater than " << y << endl;
@@ -34,13 +39,14 @@ int main()
 	}
 
 	//part c
-	//if entered number of shares is less than 100
+	//asks user for number of shares
 	int numberOfShares;
 
 	cout << "Enter number of shares ";
 
 	cin >> numberOfShares;
 
+	//outputs if entered number is less than 100
 	if (numberOfShares <= 100) {
 
 		cout << "This value is less than or equal to 100\n";
@@ -54,7 +60,7 @@ int main()
 	}
 
 	//part d
-	//box width and book width
+	//asks user for box width and book width
 	int boxWidth, bookWidth;
 
 	cout << "Enter width of box ";
@@ -65,7 +71,7 @@ int main()
 
 	cin >> bookWidth;
 
-	//box width divided by book width
+	//outputs if box width is evenly divisible by book width
 
 	if (boxWidth % bookWidth == 0) {
 		cout << "The box width is evenly divisible by the book width\n";
@@ -75,7 +81,7 @@ int main()
 	}
 
 	//part e
-	//entering shelf life and outside temp
+	//user enters shelf life and outside temp
 
 	int shelfLife, tempOutside;
 	cout << "Enter the shelf life of a box of chocolate ";
