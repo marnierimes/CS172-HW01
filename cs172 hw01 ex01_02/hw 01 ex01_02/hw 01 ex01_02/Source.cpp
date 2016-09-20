@@ -44,8 +44,10 @@ int main()
 	cout << tab << "Tab!" << endl;
 
 	//part d
+	//asks user for mailing address
 	string mailingAddress;
 	cout << "Enter mailing address ";
+	//user enters address
 	cin >> mailingAddress;
 	cout << mailingAddress;
 
