@@ -9,37 +9,11 @@ using namespace std;
 
 //function from part c
 //takes array and the size of the array
-void printArray(int array[], int size)
-{
-	for (int i = 0; i < size; i++)
-	{
-		//outputs values in the array
-		cout << array[i] << endl;
-
-	}
-
-}
+void printArray(int array[], int size);
 
 //function from part d
 //takes array and size of the array
-void arrayValue(int array[], int size)
-{
-	//asks user to enter value
-	cout << "Enter a value ";
-	int value;
-	cin >> value;
-	for (int i = 0; i < size; i++)
-	{
-		//checks if the value is in the array
-		if (value != array[i])
-		{
-			
-		}
-		else
-			cout << "The array contains this value!\n";
-	}
-	
-}
+void arrayValue(int array[], int size);
 
 int main()
 {
@@ -79,3 +53,36 @@ int main()
 	return 0;
 }
 
+//function from part c
+//takes array and the size of the array
+void printArray(int array[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		//outputs values in the array
+		cout << array[i] << endl;
+
+	}
+
+}
+
+//function from part d
+//takes array and size of the array
+void arrayValue(int array[], int size)
+{
+	//asks user to enter value
+	cout << "Enter a value ";
+	int value;
+	cin >> value;
+	for (int i = 0; i < size; i++)
+	{
+		//checks if the value is in the array
+		if (value != array[i])
+		{
+
+		}
+		else
+			cout << "The array contains this value!\n";
+	}
+
+}
