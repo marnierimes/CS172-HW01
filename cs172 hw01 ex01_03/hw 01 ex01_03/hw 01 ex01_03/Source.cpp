@@ -28,9 +28,10 @@ int add(int num1, int num2)
 }
 
 //function from part g that adds one to its parameter
-int addsOne(int num)
+void addsOne(int num)
 {
-	
+	num++;
+	cout << "The number inside the function is " << num << endl;
 }
 
 
@@ -87,7 +88,7 @@ int main()
 	//calls function 'function'
 	int value = function(number);
 	//outputs number returned from 'function'
-	cout << "The new number is " << value << endl;
+	cout << "The new doubled number is " << value << endl;
 
 	//part f
 	//randomizes variables x and y
@@ -100,7 +101,10 @@ int main()
 	cout << "The sum of random numbers " << x << " and " << y << " is " << z << endl;
 
 	//part g
-	int a = addsOne(x);
+	int n = rand() % 100;
+	cout << "Before calling the function, the number is " << n << endl;
+	addsOne(n);
+	cout << "After calling the function, the number is " << n << endl;
 
 	
 
