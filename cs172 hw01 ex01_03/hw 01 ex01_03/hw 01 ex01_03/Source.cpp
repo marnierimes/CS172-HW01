@@ -30,6 +30,7 @@ int add(int num1, int num2)
 //function from part g that adds one to its parameter
 void addsOne(int num)
 {
+	//increases the parameter by one
 	num++;
 	cout << "The number inside the function is " << num << endl;
 }
@@ -101,8 +102,10 @@ int main()
 	cout << "The sum of random numbers " << x << " and " << y << " is " << z << endl;
 
 	//part g
+	//randomizes a number and outputs what the number is
 	int n = rand() % 100;
 	cout << "Before calling the function, the number is " << n << endl;
+	//calls function 'addsOne' and passes the value of n
 	addsOne(n);
 	cout << "After calling the function, the number is " << n << endl;
 
