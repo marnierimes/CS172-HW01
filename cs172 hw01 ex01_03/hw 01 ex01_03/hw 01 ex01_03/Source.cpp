@@ -10,30 +10,14 @@ using namespace std;
 
 
 //function from part e that doubles the number in part a
-int function(int integer)
-{
-	//doubles passed integer and returns that result
-	int result = (integer * 2);
-	
-	return result;
-}
+int function(int integer);
 
 //function from part f that adds two random number together that were called
-int add(int num1, int num2)
-{
-	//adds the two random numbers and returns that result
-	int sum = (num1 + num2);
-
-	return sum;
-}
+int add(int num1, int num2);
 
 //function from part g that adds one to its parameter
-void addsOne(int num)
-{
-	//increases the parameter by one
-	num++;
-	cout << "The number inside the function is " << num << endl;
-}
+void addsOne(int num);
+
 
 
 int main()
@@ -112,4 +96,30 @@ int main()
 	
 
 	return 0;
+}
+
+//function from part e that doubles the number in part a
+int function(int integer)
+{
+	//doubles passed integer and returns that result
+	int result = (integer * 2);
+
+	return result;
+}
+
+//function from part f that adds two random number together that were called
+int add(int num1, int num2)
+{
+	//adds the two random numbers and returns that result
+	int sum = (num1 + num2);
+
+	return sum;
+}
+
+//function from part g that adds one to its parameter
+void addsOne(int num)
+{
+	//increases the parameter by one
+	num++;
+	cout << "The number inside the function is " << num << endl;
 }
