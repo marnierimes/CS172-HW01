@@ -8,14 +8,37 @@ using namespace std;
 
 
 //function from part c
-int function(int array, int size)
+//takes array and the size of the array
+void printArray(int array[], int size)
 {
 	for (int i = 0; i < size; i++)
 	{
-		cout << array[i];
+		//outputs values in the array
+		cout << array[i] << endl;
 
 	}
 
+}
+
+//function from part d
+//takes array and size of the array
+void arrayValue(int array[], int size)
+{
+	//asks user to enter value
+	cout << "Enter a value ";
+	int value;
+	cin >> value;
+	for (int i = 0; i < size; i++)
+	{
+		//checks if the value is in the array
+		if (value != array[i])
+		{
+			
+		}
+		else
+			cout << "The array contains this value!\n";
+	}
+	
 }
 
 int main()
@@ -27,6 +50,7 @@ int main()
 	cout << "Enter " << arraySize << " integers ";
 	for (int i = 0; i < arraySize; i++)
 	{
+		//loops until user has entered 5 integers
 		cin >> array[i];
 	}
 
@@ -45,8 +69,12 @@ int main()
 	cout << "The product of the integers is " << product << endl;
 
 	//part c
-	int x = function(array[arraySize], arraySize)
+	//calls 'printArray function and passes the array and array size
+	printArray(array, arraySize);
 	
+	//part d
+	//calls function 'arrayValue' and passes the array and the array size
+	arrayValue(array, arraySize);
 
 	return 0;
 }
